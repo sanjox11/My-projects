@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width , initial-scale=1">
+        <title>CSS WEB PAGE</title>
+    <style>
+          body{
+              margin:0;
+              padding:0;
+              line-height: 1.5em;
+          }
+          #header
+          {    
+              font-family: Arial;
+              width:100%;
+              background: black;
+              height: 53px;
+          }
+          #contentwrapper {
+              float: left;
+              width:100%;
+          }
+          #contentcolumn 
+          {
+              margin: 0 230px 0 230px;
+              text-align: center;
+          }
+          #leftcolumn {
+              float: left;
+              width : 230px;
+              margin-left: -100%;
+              text-align: center;
+              background: rgb(23, 172, 231);
+          }
+          #rightcolumn {
+              float: right;
+              width : 230px;
+              margin-left: -230%;
+              background: yellow;
+              text-align: center;
+          }
+          .innertext {
+              margin : 20px;
+              font-family: Arial;
+              color : black;
+          }
+          #footer {
+              clear:left;
+              width:100%;
+              background: black;
+              color :white;
+              font-family: Arial;
+              text-align: center;
+              padding: 4px;
+          }
+          ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              background-color: black;
+          }
+          li {
+              float: left;
+              border-right: 1px solid white;
+          }
+          li:last-child{
+              border-right: none;
+          }
+          li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+          }
+          li a:hover:not(.active)
+            { 
+                background-color: grey;
+            }
+
+        .active {
+            background-color: rgb(42, 42, 168);
+        }
+
+        /*Responsive Layout CSS*/
+
+        @media (max-width :840px) {
+            #leftcolumn{
+                margin-left: -100%;
+            }
+            #rightcolumn{
+                float: none;
+                width: 100%;
+                margin-left: 0;
+                clear: both;
+            }
+            #contentcolumn{
+                margin-right: 0;
+            }
+        }
+        @media(max-width:600px) {
+            #leftcolumn {
+                float: none;
+                width: 100%;
+                clear: both;
+                margin-left: 0;
+            }
+            #contentcolumn{
+                margin-left: 0;
+            }
+        }
+    </style>
+    </head>
+<body>
+<div id="container">
+        <div id="header">
+            <ul style="display:inline">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">About</a></li>
+                <li><a href="#contact">News</a></li>
+                <li><a href="#about">Contact</a></li>
+            </ul>
+        </div>
+     
+
+       <div id="contentwrapper">
+          <div id="contentcolumn">
+            <div class="innertext">
+                <b>SUNIL CHETTRI</b> <br/>Sunil Chhetri (born 3 August 1984) is an Indian professional footballer who plays as a striker or winger and captains both Indian Super League side Bengaluru and the India national team. Chhetri is the fourth-highest international goalscorer among active players, after Cristiano Ronaldo, Ali Mabkhout and Lionel Messi,[2][3] and 10th-highest of all time, as of September 2021. He is both the most-capped player and the all-time top goalscorer for India.[4][5][6]
+
+                Chhetri began his professional career at Mohun Bagan in 2002,[7][8] moving to JCT where he scored 21 goals in 48 games.[9] He signed for Major League Soccer side the Kansas City Wizards in 2010, becoming the third player from the subcontinent of note to go abroad.[10] He returned to India's I-League where he played for Chirag United and Mohun Bagan before going back abroad, at Sporting Clube de Portugal of the Primeira Liga, where he played for the club's reserve side.[11]
+                
+                Chhetri helped India win the 2007, 2009, and 2012 Nehru Cup, as well as the 2011 SAFF Championship. He was also helped India win the 2008 AFC Challenge Cup, which qualified them to their first AFC Asian Cup in 27 years,[12] scoring twice in the final tournament in 2011.[13] Chhetri has also been named AIFF Player of the Year a record six times in 2007, 2011, 2013, 2014, 2017 and 2018–19.[14][15]
+            </div>
+          </div>
+        </div>
+
+       <div id="leftcolumn">
+         <div class="innertext">
+            <b>LIONEL MESSI</b><br />Leo Messi, is an Argentine professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and captains the Argentina national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time, Messi has won a record six Ballon d'Or awards,[note 2] a record six European Golden Shoes, and in 2020 was named to the Ballon d'Or Dream Team. Until leaving the club in 2021, he had spent his entire professional career with Barcelona, where he won a club-record 35 trophies, including ten La Liga titles, seven Copa del Rey titles and four UEFA Champions Leagues. A prolific goalscorer and creative playmaker, Messi holds the records for most goals in La Liga (474), a La Liga and European league season (50), most hat-tricks in La Liga (36) and the UEFA Champions League (8), and most assists in La Liga (192), a La Liga season (21) and the Copa América (17). He also holds the record for most international goals by a South American male (79). Messi has scored over 750 senior career goals for club and country, and has the most goals by a player for a single club.
+
+            Born and raised in central Argentina, Messi relocated to Spain to join Barcelona at age 13, for whom he made his competitive debut aged 17 in October 2004. He established himself as an integral player for the club within the next three years, and in his first uninterrupted season in 2008–09 he helped Barcelona achieve the first treble in Spanish football; that year, aged 22, Messi won his first Ballon d'Or. Three successful seasons followed, with Messi winning four consecutive Ballons d'Or, making him the first player to win the award four times and in a row.[10] During the 2011–12 season, he set the La Liga and European records for most goals scored in a single season, while establishing himself as Barcelona's all-time top scorer. The following two seasons, Messi finished second for the Ballon d'Or behind Cristiano Ronaldo (his perceived career rival), before regaining his best form during the 2014–15 campaign, becoming the all-time top scorer in La Liga and leading Barcelona to a historic second treble, after which he was awarded a fifth Ballon d'Or in 2015. Messi assumed captaincy of Barcelona in 2018, and in 2019 he won a record sixth Ballon d'Or.
+         </div>
+        </div>
+
+      <div id="rightcolumn">
+        <div class="innertext">
+            <b>CRISTIANO RONALDO</b><br /> is a Portuguese professional footballer who plays as a forward for Premier League club Manchester United and captains the Portugal national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time, Ronaldo has won five Ballon d'Or awards[note 3] and four European Golden Shoes, the most by a European player. He has won 32 trophies in his career, including seven league titles, five UEFA Champions Leagues, one UEFA European Championship and one UEFA Nations League. Ronaldo holds the records for most goals (136) and assists (42) in the Champions League, most goals in the European Championship (14), and most international goals by a male player (111). He is one of the few recorded players to have made over 1,100 professional career appearances, and has scored over 780 official senior career goals for club and country.
+
+            Born and raised in Madeira, Ronaldo began his senior club career playing for Sporting CP, before signing with Manchester United in 2003, aged 18, winning the FA Cup in his first season. He would also go onto win three consecutive Premier League titles, the Champions League and the FIFA Club World Cup; at age 23, he won his first Ballon d'Or. Ronaldo was the subject of the then-most expensive association football transfer when he signed for Real Madrid in 2009 in a transfer worth €94 million (£80 million), where he won 15 trophies, including two La Liga titles, two Copa del Rey and four Champions Leagues, and became the club's all-time top goalscorer.
+        </div>
+      </div>
+
+    <div id="footer">Footer 2021</div>
+
+</div>
+</body>
+</html>
